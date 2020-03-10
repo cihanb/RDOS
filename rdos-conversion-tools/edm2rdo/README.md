@@ -10,17 +10,17 @@ SQL Server Management Studio or Azure Data Studio (for Linux and MacOS) for inte
 
 NET Core - Install the latest version of [.NET Core SDK](https://dotnet.microsoft.com/download) and ensure version 2.2 is installed (Optional)
 
-### **Installation** ###
+## **Installation** ###
 
 Download and unzip the tool in a folder on your computer.
 
-[Windows 64-bit](https://rmsimport.blob.core.windows.net/public/Edm2Rdos_V1/win-x64.zip)
+[Windows 64-bit](https://rmsimport.blob.core.windows.net/public/Edm2Rdos_V1/edm2rdo-win-x64.zip)
 
-[MacOS 64-bit](https://rmsimport.blob.core.windows.net/public/Edm2Rdos_V1/osx-x64.zip)
+[MacOS 64-bit](https://rmsimport.blob.core.windows.net/public/Edm2Rdos_V1/edm2rdo-osx-x64.zip)
 
-[Ubuntu 64-bit](https://rmsimport.blob.core.windows.net/public/Edm2Rdos_V1/ubuntu-x64.zip)
+[Ubuntu 64-bit](https://rmsimport.blob.core.windows.net/public/Edm2Rdos_V1/edm2rdo-ubuntu-x64.zip)
 
-### **Running the tool** ###
+## **Running the tool** ###
 
 To use the tool, you need to provide and input connection string (EDM database) and an output connection string (expected new RDO database).
 You can download [EDM_Sample](https://rmsimport.blob.core.windows.net/public/Edm2Rdos_V1/Edm2Rdos_Sample.zip) database to use with the tool.  The examples below show how to run the tool using the included sample database.
@@ -30,6 +30,7 @@ You can run the tool without any parameters and it will list the options.
 On Mac and Linux
 
 ```bash
+chmod +x Edm2Rdo   # Make the file executable 
 ./Edm2Rdo
 ```
 
@@ -39,7 +40,7 @@ On Windows
 Edm2Rdo
 ```
 
-### **Notes** ###
+## **Notes** ###
 
 * The tool requires a source EDM database in Microsoft SQL Server. Sample scripts with data and reference tables are provided [here](../schema/sql) or you can use the sample database provided above to use the tool.
 
